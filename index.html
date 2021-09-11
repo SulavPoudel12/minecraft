@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sasta Minecraft</title>
+    <link rel="icon" href="img/mobs/steve.png" />
+  </head>
+  <h1></h1>
+
+  <body>
+    <div class="logo">
+      <!-- <h1>Minecraft</h1> -->
+      <img id="logo" src="img/mobs/logo.png" alt="" />
+    </div>
+    <select name="level" onchange="change()" id="level">
+      <option value="Zoimbe">Zoimbe</option>
+      <option value="Ghast">Ghast</option>
+      <option value="Wither">Wither</option>
+      <option value="Dragon">EnderDragon</option>
+
+      <option value="Developer">Developer</option>
+    </select>
+
+    <div id="game">
+      <div id="player">
+        <div id="playergametool" class="gametools">
+          <div class="tools">
+            <img name="0" class="toolimg" src="img/mobs/rock.png" alt="Rock" />
+          </div>
+          <div class="tools">
+            <img
+              name="1"
+              class="toolimg"
+              src="img/mobs/paper.png"
+              alt="Paper"
+            />
+          </div>
+          <div class="tools">
+            <img
+              name="2"
+              class="toolimg"
+              src="img/mobs/shears.png"
+              alt="Scissors"
+            />
+          </div>
+          <div id="playerimg">
+            <img id="mobimg" src="img/mobs/steve.png" alt="steve" />
+            <div class="life">
+              <!-- <img src="img/mobs/life.png" alt=""> -->
+              <h1 id="playerlife" class="lifei">10</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="computer">
+        <div id="computerimg">
+          <div class="gametools">
+            <div class="tools" id="mobtool">
+              <img id="comptoolimg" src="img/mobs/question.png" />
+            </div>
+            <img id="compmobimg" src="img/mobs/Zoimbe.png" alt="steve" />
+          </div>
+        </div>
+        <div class="life">
+          <!-- <img src="img/mobs/life.png" alt=""> -->
+          <h1 id="complife" class="lifei">2</h1>
+        </div>
+      </div>
+      <!-- <div class="vs">
+      <div class="img">
+        <img src="img/mobs/vs.png" alt="">
+
+      </div> -->
+
+      
+    </div>
+    <div class="gameinfo">
+      <div class="choose">
+        <h1 style="color:blue;" class="item-choose" id="youchoose">VS</h1>
+        <h1 style="color:red;" class="item-choose" id="compchoose">VS</h1>
+        <h1 style="color:Green;" id="winner" class="item-choose">VS</h1>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
